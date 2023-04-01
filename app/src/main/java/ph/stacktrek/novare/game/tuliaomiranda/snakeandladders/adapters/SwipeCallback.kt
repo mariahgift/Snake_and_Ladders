@@ -33,7 +33,6 @@ class SwipeCallback (dragDirs: Int, swipeDirs: Int) :
         actionState: Int,
         isCurrentlyActive: Boolean
     ) {
-
         super.onChildDraw(
             canvas, recyclerView, viewHolder,
             dX, dY, actionState, isCurrentlyActive
@@ -57,7 +56,6 @@ class SwipeCallback (dragDirs: Int, swipeDirs: Int) :
         } else { // view is unSwiped
             background.setBounds(0, 0, 0, 0)
         }
-
         background.draw(canvas)
     }
 }

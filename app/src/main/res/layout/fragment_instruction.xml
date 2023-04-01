@@ -6,12 +6,6 @@
     android:background="#D6D6CE"
     tools:context=".InstructionFragment">
 
-<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:id="@+id/instruction"-->
-<!--        android:text="Instruction fragment" />-->
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:orientation="vertical"
@@ -68,6 +62,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+
             android:text="@string/bounce_back_description"
             />
 

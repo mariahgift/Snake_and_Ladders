@@ -22,6 +22,7 @@ class PlayerDAOSQLLiteImplementation(var context: Context): PlayerDAO{
         val contentValues = ContentValues()
         contentValues.put(DatabaseHandler.TABLE_PLAYER_NAME, player.username)
 
+
         var status = db.insert(DatabaseHandler.TABLE_PLAYER,
             null,
             contentValues)
@@ -46,7 +47,7 @@ class PlayerDAOSQLLiteImplementation(var context: Context): PlayerDAO{
                 null,
                 null)
 
-        }catch (sqlException: SQLException){
+        } catch (sqlException: SQLException){
             db.close()
             return result
         }

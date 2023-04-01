@@ -8,6 +8,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import ph.stacktrek.novare.game.tuliaomiranda.snakeandladders.adapters.PlayerAdapter
 import ph.stacktrek.novare.game.tuliaomiranda.snakeandladders.adapters.SwipeCallback
 import ph.stacktrek.novare.game.tuliaomiranda.snakeandladders.dao.PlayerDAO
@@ -25,6 +26,8 @@ class StartGameActivity : AppCompatActivity() {
     private lateinit var playerDAO: PlayerDAO
     private lateinit var itemTouchHelper: ItemTouchHelper
 
+    var canStartGame: Boolean = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityStartGameBinding.inflate(layoutInflater)
@@ -35,6 +38,24 @@ class StartGameActivity : AppCompatActivity() {
         binding.fabAddPlayerButton.setOnClickListener {
             showAddPlayerDialogue().show()
         }
+
+
+//        binding.readyButton.setOnClickListener {
+//            if (!canStartGame) {
+//                binding.readyButton.isEnabled = false
+//                Snackbar.make(binding.root,
+//                    "Minimum of 2 players and Maximum of 4 players",
+//                    Snackbar.LENGTH_SHORT).show()
+//            }  else {
+//                binding.readyButton.isEnabled = true
+//                val goToGame = Intent(
+//                    applicationContext,
+//                    GameActivity::class.java
+//                )
+//                startActivity(goToGame)
+//                finish()
+//            }
+//        }
     }
 
     fun loadPlayers() {

@@ -14,6 +14,7 @@ class DatabaseHandler(context: Context):
         const val TABLE_PLAYER_ID = "id"
         const val TABLE_PLAYER_NAME = "name"
 
+
     }
 
     override fun onCreate(db: SQLiteDatabase?) {

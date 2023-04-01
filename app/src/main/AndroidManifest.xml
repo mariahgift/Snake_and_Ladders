@@ -12,13 +12,13 @@
         android:theme="@style/Theme.SnakeAndLadders"
         tools:targetApi="31">
         <activity
+            android:name=".GameActivity"
+            android:exported="false" />
+        <activity
             android:name=".StartGameActivity"
             android:exported="false" />
         <activity
             android:name=".InstructionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GameActivity"
             android:exported="false" />
         <activity
             android:name=".HistoryActivity"
