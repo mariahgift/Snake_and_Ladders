@@ -11,50 +11,49 @@
         android:id="@+id/player_on_game"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PLAYERS"
+        android:text="@string/players"
         android:textAlignment="center"
-        android:textSize="30dp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="35sp"
         android:textStyle="bold"
-
         app:layout_constraintBottom_toTopOf="@id/fab_add_player_button"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135"
+        app:layout_constraintVertical_bias="0.149"
         tools:ignore="MissingConstraints" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/players_list"
-        android:layout_width="375dp"
+        android:layout_width="340dp"
         android:layout_height="276dp"
-        android:layout_marginStart="20dp"
         app:layout_constraintBottom_toTopOf="@id/fab_add_player_button"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/player_on_game"
+        android:background="@drawable/list_of_players"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/fab_add_player_button"
-        android:layout_width="387dp"
+        android:layout_width="340dp"
         android:layout_height="49dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp"
         android:padding="5dp"
         android:text="@string/add_players"
+        android:textAllCaps="false"
         android:textSize="20sp"
         android:background="@drawable/button_purple"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
         app:layout_constraintVertical_bias="0.696"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/ready_button"
-        android:layout_width="387dp"
+        android:layout_width="340dp"
         android:layout_height="49dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
@@ -64,11 +63,10 @@
         android:text="@string/ready_to_play"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:textAllCaps="false"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fab_add_player_button"
         tools:ignore="MissingConstraints" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

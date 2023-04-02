@@ -25,14 +25,6 @@ class PlayerAdapter(private val context: Context,
     fun addPlayer(player: Player) {
             playerList.add(0, player)
             notifyItemInserted(0)
-
-//        val startGame = StartGameActivity()
-//
-//        if (itemCount in 2..4) {
-//            startGame.canStartGame
-//        } else {
-//            startGame.canStartGame = false
-//        }
     }
 
 

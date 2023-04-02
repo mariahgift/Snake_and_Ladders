@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="122dp"
         android:layout_marginTop="56dp"
-        android:src="@drawable/baseline_bar_chart_gray"
+        android:src="@drawable/baseline_bar_chart_24"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp" />
@@ -26,14 +26,14 @@
         android:text="@string/history_fragment"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textSize="35dp"
+        android:textSize="35sp"
+        android:textColor="@color/black"
         android:textStyle="bold"
-        android:fontFamily="@font/inter_regular"
         app:layout_constraintTop_toBottomOf="@+id/bar_logo"
         tools:ignore="MissingConstraints" />
 
 
-    <EditText
+    <TextView
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"

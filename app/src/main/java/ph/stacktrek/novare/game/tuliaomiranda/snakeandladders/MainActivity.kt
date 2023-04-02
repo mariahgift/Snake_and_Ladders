@@ -12,24 +12,19 @@ import ph.stacktrek.novare.game.tuliaomiranda.snakeandladders.databinding.Activi
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-
     private lateinit var playerAdapter: PlayerAdapter
+    private lateinit var playerDAO: PlayerDAO
+    private lateinit var itemTouchHelper: ItemTouchHelper
 
     private val homeFragment = HomeFragment()
     private val instructionFragment = InstructionFragment()
     private val historyFragment = HistoryFragment()
-
-    private lateinit var playerDAO: PlayerDAO
-    private lateinit var itemTouchHelper: ItemTouchHelper
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         replaceFragment(homeFragment)
-
-
 
         binding.bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId) {
@@ -38,7 +33,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.history -> replaceFragment(historyFragment)
 
                 else -> {
-
                 }
             }
             true

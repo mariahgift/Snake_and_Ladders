@@ -24,6 +24,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ready_to_play">Ready to Play</string>
     <string name="add_players">Add Players</string>
-    <string name="history_fragment">History</string>
+    <string name="history_fragment">Winners</string>
     <string name="name_of_winner">Sammuel Tuliao</string>
+    <string name="view_user_name">View User name</string>
+    <string name="players">PLAYERS</string>
 </resources>
